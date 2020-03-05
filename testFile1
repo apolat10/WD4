@@ -1,0 +1,36 @@
+<script>
+function myfunction()
+{
+var x= document.getElementById("myselect");
+var z=x.options[x.selectedIndex].text;
+var a = document.getElementById("mycheck").value;
+var m=document.getElementById("first").value;
+var n=document.getElementById("second").value;
+document.write(a)
+document.write(z)
+document.write(m)
+document.write(n)
+}
+function myfunction2()
+{
+document.getElementById("form1").reset();
+}
+</script>
+<form id="form1">
+Education level:
+<select id="myselect">
+<option>Associates</option>
+<option>Bachelors</option>
+<option>Masters</option>
+<option>Docterate</option>
+</select><br><br>
+Select your gender:
+<input type="checkbox" id="mycheck" value="male">Male
+<input type="checkbox" id="mycheck" value="female">Female
+<input type="checkbox" id="mycheck" value="other">Other<br><br>
+First name:<input id="first"><br>
+Last name:<input id="second"><br><br>
+</form>
+<button onclick="myfunction()">Click me</button>
+<input type="submit" onclick="myfunction2()" value="Reset">
+
